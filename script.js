@@ -47,4 +47,13 @@ tabs.forEach((tab, i) => {
       tabs[newIndex].click();
     }
   });
+
 });
+if (isTouchDevice) {
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', e => {
+      e.preventDefault(); // pode ajudar a evitar conflito
+      card.classList.toggle('focused');
+    });
+  });
+}
