@@ -47,17 +47,4 @@ tabs.forEach((tab, i) => {
       tabs[newIndex].click();
     }
   });
-if (isTouchDevice) {
-  let lastFocusedCard = null;
-  document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', e => {
-      e.preventDefault();
-      if (lastFocusedCard && lastFocusedCard !== card) {
-        lastFocusedCard.classList.remove('focused');
-      }
-      card.classList.toggle('focused');
-      lastFocusedCard = card.classList.contains('focused') ? card : null;
-    });
-  });
-}
 
