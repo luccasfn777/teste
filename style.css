@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url('fundo2.png') no-repeat center center;
+  background: url('imagens/fundo.png') no-repeat center center;
   background-attachment: scroll; /* alterado de fixed para scroll para melhor no mobile */
   background-size: cover;
   background-repeat: no-repeat;
@@ -398,5 +398,6 @@ iframe {
     padding: 20px 30px;
   }
 }
+
 
 
