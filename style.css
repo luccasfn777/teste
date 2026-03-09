@@ -185,13 +185,10 @@ nav.navbar a:hover {
   background: linear-gradient(135deg, #422c0f, #221707);
 }
 
-/* Desativa hover em dispositivos touch */
-@media (hover: none) {
-  .card:hover .content {
-    transform: none;
-  }
+.card:hover .content,
+.card.focused .content {
+  transform: rotateY(180deg);
 }
-
 .front,
 .back {
   position: absolute;
@@ -400,6 +397,7 @@ iframe {
     padding: 20px 30px;
   }
 }
+
 
 
 
